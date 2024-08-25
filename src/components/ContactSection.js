@@ -31,16 +31,18 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="bg-white text-gray-900 py-20">
+    <section id="contact" className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
-        <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+        <h2 className="text-4xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+          Get In Touch
+        </h2>
+        <form className="max-w-lg mx-auto bg-white rounded-lg shadow-2xl p-8" onSubmit={handleSubmit}>
+          <div className="mb-6">
+            <label className="block text-gray-800 text-lg font-bold mb-2" htmlFor="name">
               Name
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-2 border rounded-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:border-transparent transition ease-in-out duration-300"
               id="name"
               type="text"
               name="name"
@@ -50,12 +52,12 @@ const ContactSection = () => {
               required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          <div className="mb-6">
+            <label className="block text-gray-800 text-lg font-bold mb-2" htmlFor="email">
               Email
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full px-4 py-2 border rounded-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-purple-300 focus:border-transparent transition ease-in-out duration-300"
               id="email"
               type="email"
               name="email"
@@ -65,12 +67,12 @@ const ContactSection = () => {
               required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+          <div className="mb-6">
+            <label className="block text-gray-800 text-lg font-bold mb-2" htmlFor="message">
               Message
             </label>
             <textarea
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full h-32 px-4 py-2 border rounded-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:border-transparent transition ease-in-out duration-300"
               id="message"
               name="message"
               value={formData.message}
@@ -80,12 +82,12 @@ const ContactSection = () => {
             />
           </div>
           <div className="text-center">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-              Send
+            <button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out" type="submit">
+              Send Message
             </button>
           </div>
           {submitted && (
-            <div className="text-green-500 mt-4 text-center">
+            <div className="mt-6 text-center text-green-500 text-lg font-semibold">
               Thank you for your message! I'll get back to you soon.
             </div>
           )}

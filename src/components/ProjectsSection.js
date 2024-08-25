@@ -24,7 +24,14 @@ const projects = [
     title: 'Figma Design Project',
     description: 'A design project created in Figma.',
     link: 'https://www.figma.com/files/team/1263589982534203979/recents-and-sharing/recently-viewed?fuid=1263589980779324279', // Replace with your Figma project link
+  },  
+  {
+    title: 'Calgary Hospital  Management System',
+    description: 'TechTextile is an innovative B2B and B2C e-commerce platform specializing in yarn and fabric products. Our mission is to bridge the gap between Indian textile manufacturers and North American buyers, leveraging the substantial import market and facilitating global trade.',
+    techStack: 'JavaScript, React, NodeJS, NextJS, Neon Database, PostgreSQL, Firebase, Figma, Git, GitHub, TailwindCSS',
+    link: 'https://techtextile.vercel.app/', // Replace with your Vercel project link
   },
+
 ];
 
 const ProjectsSection = () => {
