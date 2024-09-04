@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import Education from './components/Education';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <HeroSection heroVisible={heroVisible}/>
       <AboutSection />
       <ProjectsSection />
+      <Education />
       <ContactSection />
       <Footer />
     </div>
