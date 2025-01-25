@@ -3,6 +3,13 @@ import React, { useState, useEffect } from 'react';
 // Update this array with your project details, including multiple images for each project
 const projects = [
   {
+    title: 'TechTextile',
+    description: 'TechTextile is an innovative B2B and B2C e-commerce platform specializing in yarn and fabric products. Our mission is to bridge the gap between Indian textile manufacturers and North American buyers, leveraging the substantial import market and facilitating global trade.',
+    techStack: 'JavaScript, React, NodeJS, NextJS, Neon Database, PostgreSQL, Firebase, Figma, Git, GitHub, TailwindCSS',
+    link: 'https://techtextile.vercel.app/',
+    images: ['/images/TT.png', '/images/TT2.png', '/images/TT3.png', '/images/TT4.png', '/images/TT5.png', '/images/TT6.png', '/images/TT7.png', '/images/TT8.png'], // Multiple images for TechTextile
+  },
+  {
     title: 'Healthy Eats',
     description: "A web application designed to create personalized meal plans that cater to your body's needs, not just your cravings.",
     techStack: 'JavaScript, React, NodeJS, NextJS, Firebase, Figma, Git, GitHub, TailwindCSS',
@@ -14,14 +21,7 @@ const projects = [
     description: 'A Mobile Game Application that allows the user to play Tic Tac Toe with a twist. The game is played on a 3x3 grid, but the player can only win by getting 3 in a row on the 3x3 grid they are playing on.',
     techStack: 'React Native, JavaScript, React Native Async Storage, Figma, Git, GitHub',
     link: 'https://github.com/MeetGodad/TacTical-TicTacToe',
-    images: ['/images/TTT.png', '/images/TTT2.png', '/images/TTT3.png'], // Multiple images for Tactical Tic Tac Toe
-  },
-  {
-    title: 'TechTextile',
-    description: 'TechTextile is an innovative B2B and B2C e-commerce platform specializing in yarn and fabric products. Our mission is to bridge the gap between Indian textile manufacturers and North American buyers, leveraging the substantial import market and facilitating global trade.',
-    techStack: 'JavaScript, React, NodeJS, NextJS, Neon Database, PostgreSQL, Firebase, Figma, Git, GitHub, TailwindCSS',
-    link: 'https://techtextile.vercel.app/',
-    images: ['/images/TT.png', '/images/TT2.png', '/images/TT3.png', '/images/TT4.png', '/images/TT5.png', '/images/TT6.png', '/images/TT7.png', '/images/TT8.png'], // Multiple images for TechTextile
+    images: ['/images/TTT.png', '/images/TTT2.png', '/images/TTT4.png', '/images/TTT5.png'], // Multiple images for Tactical Tic Tac Toe
   },
   {
     title: 'Figma Design Project',
@@ -33,7 +33,7 @@ const projects = [
     title: 'Calgary Hospital Management System',
     description: 'Developed a scalable healthcare platform using C# .NET MAUI Blazor and MySQL. The system includes advanced search functionality, efficient CRUD operations, and an intuitive UI, improving data management and workflow. Collaborated with teams to create a robust solution, with detailed documentation for smooth adoption.',
     techStack: 'C# .NET MAUI Blazor, MySQL',
-    link: 'https://techtextile.vercel.app/',
+    link: 'https://github.com/yashhingu2403/Hospital-Management-System',
     images: ['/images/HMS.png', '/images/HMS2.png', '/images/HMS3.png', '/images/HMS4.png', '/images/HMS6.png', '/images/HMS7.png'], // Multiple images for Calgary Hospital Management System
   },
 ];
