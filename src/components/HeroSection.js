@@ -11,7 +11,7 @@ const HeroSection = ({ heroVisible }) => {
       <div 
         className={`flex-1 text-left pl-8 transform transition-transform duration-1000 ${heroVisible ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <h1 className="text-5xl font-bold mb-4">Welcome to the Tech Enthusiast's World</h1>
+        <h1 className="text-5xl font-bold mb-4">Welcome to the Tech Enthusiast's</h1>
         <p className="text-xl mb-8">Crafting Digital Experiences with Innovation and Precision.</p>
         <a 
           href="#about" 
